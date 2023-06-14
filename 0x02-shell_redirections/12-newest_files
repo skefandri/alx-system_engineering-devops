@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -type f -exec ls -lt {} + | cut -c45- | head -n 10
+ls -lt | awk '{print $9}' | head -n 10
